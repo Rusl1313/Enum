@@ -3,6 +3,6 @@ public class Main {
         Day day = Day.SUNDAY;
         System.out.println(day.toString());
         System.out.println(day.getRusName());
-        System.out.println(day.isWeekend());
+        System.out.println(day.isWeekend(Day.SATURDAY.name()));
     }
 }

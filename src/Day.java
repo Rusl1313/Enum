@@ -8,14 +8,8 @@ public enum Day {
     public String getRusName() {
             return translation;
     }
-    public boolean isWeekend() {
-        Day day = Day.SUNDAY;
-        switch (day) {
-            case SATURDAY, SUNDAY:
-                return true;
-            default:
-                return false;
-        }
+    public boolean isWeekend(String dayName) {
+    return "SATURDAY".equalsIgnoreCase(dayName) || "SUNDAY".equalsIgnoreCase(dayName);
 
     }
 }
